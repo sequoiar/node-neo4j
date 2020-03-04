@@ -1,7 +1,7 @@
 {
     "name": "neo4jv1",
     "description": "Neo4j driver (REST API client) for Node.js",
-    "version": "1.1.2",
+    "version": "1.1.6",
     "author": "The Thingdom <info@thethingdom.com>",
     "contributors": [
         "Daniel Gasienica <daniel@gasienica.ch>",
@@ -24,7 +24,7 @@
         "node": ">= 0.6"
     },
     "scripts": {
-        "build": "coffee -m -c lib/ && _coffee -m --standalone -c lib/",
+        "build": "npm i --save-dev && coffee -m -c lib/ && _coffee -m --standalone -c lib/",
         "clean": "rm -f lib/*.{js,map}",
         "codo": "codo && codo --server",
         "prepublish": "npm run build",
